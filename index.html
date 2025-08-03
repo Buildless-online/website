@@ -1,1 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>buildless</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <nav class="bg-gray-800 border-b border-gray-700 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-white">Buildless.</a>
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <!-- Everything You Need, Built In -->
+          <a href="#everything" class="text-gray-300 hover:text-white">Features</a>
+
+          <!-- How It Works -->
+          <a href="#how-it-works" class="text-gray-300 hover:text-white">How It Works</a>
+
+          <!-- Code Examples (100% HTML-Free) -->
+          <a href="#code-examples" class="text-gray-300 hover:text-white">Examples</a>
+
+          <!-- Why Choose JSON App Builder? -->
+          <a href="#why-choose" class="text-gray-300 hover:text-white">Why Choose</a>
+
+          <a href="#" class="ml-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Sign In</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-300 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2">
+      <a href="#everything" class="block text-gray-300 hover:text-white">Features</a>
+      <a href="#how-it-works" class="block text-gray-300 hover:text-white">How It Works</a>
+      <a href="#code-examples" class="block text-gray-300 hover:text-white">Examples</a>
+      <a href="#why-choose" class="block text-gray-300 hover:text-white">Why Choose</a>
+      <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Sign In</a>
+    </div>
+
+    <script>
+      // Mobile menu toggle script
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+
+  <section class="bg-gray-900 text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-6">
+        Build with JSON & JavaScript
+      </h1>
+
+      <!-- Subheading -->
+      <h2 class="text-xl sm:text-2xl font-medium text-gray-300 mb-4">
+        Completely HTML-free for devs.
+      </h2>
+
+      <!-- Description -->
+      <p class="text-lg text-gray-400 mb-8">
+        Define your UI with JSON and add behavior with JavaScript.
+        No build tools, no complex frameworks—just a clean, powerful way to build web applications.
+      </p>
+
+      <!-- Call to Action -->
+      <a href="#"
+        class="inline-block bg-blue-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+        Get Started
+      </a>
+
+    </div>
+  </section>
+
+  <section id="everything" class="bg-gray-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <!-- Section Title -->
+      <h2 class="text-3xl sm:text-4xl font-bold mb-12">
+        Everything You Need, Built In
+      </h2>
+
+      <!-- Tiles Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+
+        <!-- Tile 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <!-- Icon -->
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-xl font-semibold mb-2">Authentication & Data Storage</h3>
+          <!-- Description -->
+          <p class="text-gray-400">
+            Sign in with Google and securely store your app’s data—no setup required. User auth and real-time storage
+            work out of the box.
+          </p>
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 16h8M8 12h8m-8-4h8M4 6h16v12H4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Pure JSON, No Build Step</h3>
+          <p class="text-gray-400">
+            Build complete applications with just JSON. No build tools, no bundlers, no waiting.
+          </p>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-pink-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">AI-Powered Development</h3>
+          <p class="text-gray-400">
+            Describe what you want and our AI generates the UI and logic.
+          </p>
+        </div>
+
+        <!-- Tile 4 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 10l4.553 2.276a1 1 0 010 1.789L15 16.5M9 10l-4.553 2.276a1 1 0 000 1.789L9 16.5" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Real-time Everything</h3>
+          <p class="text-gray-400">
+            Changes appear instantly. No refresh needed. Real-time collaboration.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="bg-gray-900 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <!-- Section Title -->
+      <h2 class="text-3xl sm:text-4xl font-bold mb-12">How It Works</h2>
+
+      <!-- 3 Tiles Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+
+        <!-- Tile 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <!-- Icon -->
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-xl font-semibold mb-2">Describe with JSON</h3>
+          <!-- Description -->
+          <p class="text-gray-400">
+            Define your app's structure, UI, and data in a simple JSON format. No HTML or templates required.
+          </p>
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Add Logic in JavaScript</h3>
+          <p class="text-gray-400">
+            Attach interactivity and behavior using plain JavaScript methods—right alongside your JSON.
+          </p>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Instant & Live</h3>
+          <p class="text-gray-400">
+            See your changes in real time—no build tools, no deployment, always in sync.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="code-examples" class="bg-gray-900 text-white py-20">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <!-- Section Heading -->
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+        Code Examples (100% HTML-Free)
+      </h2>
+
+      <!-- Snippet 1 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold mb-3">Simple Counter Component</h3>
+        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
+          <button onclick="copyCode('codeBlock1')"
+            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
+            Copy
+          </button>
+          <pre id="codeBlock1" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
+<code>
+  {
+  "type": "div",
+  "children": [
+    { "type": "h2", "text": "{{data.count}} clicks" },
+    { "type": "button", "text": "Increment", "onClick": "increment" }
+  ],
+  "data": { "count": 0 },
+  "methods": { "increment": "data.count += 1" }
+}
+ </code>
+        </pre>
+        </div>
+      </div>
+
+      <!-- Snippet 2 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold mb-3">Todo List (with Loop)</h3>
+        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
+          <button onclick="copyCode('codeBlock2')"
+            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
+            Copy
+          </button>
+          <pre id="codeBlock2" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
+<code>
+  {
+  "type": "div",
+  "children": [
+    {
+      "type": "div",
+      "style": { "display": "flex", "gap": "8px", "marginBottom": "16px" },
+      "children": [
+        { "type": "input", "placeholder": "Add a task", "bind": "data.newTodo" },
+        { "type": "button", "text": "Add", "onClick": "addTodo" }
+      ]
+    },
+    {
+      "type": "ul",
+      "children": [
+        {
+          "type": "li",
+          "text": "{{item.text}}",
+          "for": "item, idx in data.todos",
+          "children": [
+            { "type": "button", "text": "Delete", "onClick": "deleteTodo(idx)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": { "todos": [], "newTodo": "" },
+  "methods": {
+    "addTodo": "if (data.newTodo) { data.todos.push({ text: data.newTodo }); data.newTodo = ''; }",
+    "deleteTodo": "data.todos.splice(idx, 1)"
+  }
+}
+</code>
+        </pre>
+        </div>
+      </div>
+
+      <!-- Snippet 3 -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Real-time Chat Component</h3>
+        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
+          <button onclick="copyCode('codeBlock3')"
+            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
+            Copy
+          </button>
+          <pre id="codeBlock3" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
+<code>
+  {
+  "type": "div",
+  "children": [
+    {
+      "type": "div",
+      "style": { "height": "300px", "overflowY": "auto", "border": "1px solid #ddd", "padding": "16px" },
+      "children": [
+        {
+          "type": "div",
+          "text": "{{msg.user}}: {{msg.text}}",
+          "for": "msg in data.messages"
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "style": { "display": "flex", "gap": "8px", "marginTop": "8px" },
+      "children": [
+        { "type": "input", "placeholder": "Type a message...", "bind": "data.newMessage" },
+        { "type": "button", "text": "Send", "onClick": "sendMessage" }
+      ]
+    }
+  ],
+  "data": { "messages": [], "newMessage": "" },
+  "methods": {
+    "sendMessage": "if (data.newMessage) { data.messages.push({ user: 'You', text: data.newMessage }); data.newMessage = ''; }"
+  }
+}
+</code>
+        </pre>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="why-choose" class="bg-gradient-to-b from-gray-900 to-black py-16 px-6 text-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 relative">
+        Why Choose JSON App Builder?
+        <span class="block w-20 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></span>
+      </h2>
+
+      <div class="space-y-8">
+
+        <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-md border border-white/10">
+          <h3 class="text-2xl font-semibold mb-2 text-blue-400">The Most Minimal Code, Ever.</h3>
+          <p class="text-gray-300">
+            JSON App Builder is the most minimalistic web framework you will find. You describe your UI and logic in
+            pure JSON and JavaScript—no HTML, no build tools, no complex configuration. If you want to spend less time
+            on boilerplate and more time on ideas, this is for you.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-md border border-white/10">
+          <h3 class="text-2xl font-semibold mb-2 text-blue-400">Perfect for prototypes, MVPs, and small apps</h3>
+          <p class="text-gray-300">
+            Unlike other frameworks that require deep knowledge of their ecosystem, JSON App Builder lets you build
+            working apps with less code and less friction. You can go from idea to working prototype in minutes.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-md border border-white/10">
+          <h3 class="text-2xl font-semibold mb-2 text-blue-400">How does it compare?</h3>
+          <p class="text-gray-300 mb-3">
+            React, Vue, Angular, and even low-code tools all require more setup, more syntax, and more files. Here, you
+            just write a single JSON object and a few lines of JavaScript for logic. No virtual DOM, no JSX, no
+            templates—just data.
+          </p>
+          <p class="text-gray-300">
+            <strong class="text-white">Limitations:</strong> This approach is intentionally minimal. While you get
+            authentication, data storage, and real-time updates out of the box, there are limits to what you can
+            customize. For large-scale or highly custom apps, a traditional framework may be better.
+          </p>
+        </div>
+
+        <div class="text-center mt-12">
+          <p class="text-lg font-medium text-white">
+            <span class="text-blue-400">JSON App Builder:</span> The lowest code, most minimalistic way to build real
+            web apps.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-950 text-white py-12 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4">Trusted by developers at leading companies</h3>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-300 text-lg mt-4">
+        <span class="hover:text-blue-400 transition">Company A</span>
+        <span class="hover:text-blue-400 transition">Startup B</span>
+        <span class="hover:text-blue-400 transition">Enterprise C</span>
+      </div>
+
+      <p class="text-sm text-gray-500 mt-8">&copy; 2025 JSON App Builder. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Shared Copy Function -->
+  <script>
+    function copyCode(codeBlockId) {
+      const code = document.getElementById(codeBlockId).innerText;
+      navigator.clipboard.writeText(code)
+        .then(() => alert("Code copied to clipboard!"))
+        .catch(err => alert("Failed to copy: " + err));
+    }
+  </script>
+
+
+</body>
+
+</html>
