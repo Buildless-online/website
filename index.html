@@ -15,7 +15,7 @@
 
 <body class="bg-gray-900 text-white">
 
-  <nav class="bg-gray-800 border-b border-gray-700 shadow-sm">
+  <nav>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <!-- Logo -->
@@ -37,7 +37,9 @@
           <!-- Why Choose JSON App Builder? -->
           <a href="#why-choose" class="text-gray-300 hover:text-white">Why Choose</a>
 
-          <a href="#" class="ml-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Sign In</a>
+          <a href="#"
+            class="ml-4 bg-gray-100 text-gray-800 font-semibold px-4 py-2 rounded hover:bg-gray-800 hover:text-gray-100 transition">Sign
+            In</a>
         </div>
 
         <!-- Mobile Hamburger -->
@@ -72,33 +74,35 @@
   </nav>
 
 
-  <section class="bg-gray-900 text-white py-20">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+  <section class="bg-gray-900 text-white py-32">
+    <div class="max-w-7xl mx-auto px-6 text-center">
 
       <!-- Headline -->
-      <h1 class="text-4xl sm:text-5xl font-extrabold mb-6">
+      <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight mb-6">
         Build with JSON & JavaScript
       </h1>
 
       <!-- Subheading -->
-      <h2 class="text-xl sm:text-2xl font-medium text-gray-300 mb-4">
-        Completely HTML-free for devs.
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-300 mb-6">
+        Say goodbye to HTML. Build smarter, not harder.
       </h2>
 
       <!-- Description -->
-      <p class="text-lg text-gray-400 mb-8">
-        Define your UI with JSON and add behavior with JavaScript.
-        No build tools, no complex frameworks—just a clean, powerful way to build web applications.
+      <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+        Design your UI using JSON. Add interactivity with JavaScript.
+        No build tools or frameworks required — just fast, clean, scalable apps.
       </p>
 
       <!-- Call to Action -->
       <a href="#"
-        class="inline-block bg-blue-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+        class="inline-block bg-gradient-to-r from-[#69f5ff] to-[#3a7ca5] text-gray-900 font-semibold text-lg px-8 py-4 rounded-full hover:from-[#3a7ca5] hover:to-[#69f5ff] hover:text-white transition duration-300 shadow-lg">
         Get Started
       </a>
 
+
     </div>
   </section>
+
 
   <section id="everything" class="bg-gray-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
@@ -115,7 +119,8 @@
         <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
           <!-- Icon -->
           <div class="mb-4">
-            <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
             </svg>
           </div>
@@ -145,7 +150,8 @@
         <!-- Tile 3 -->
         <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4">
-            <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
             </svg>
           </div>
@@ -174,62 +180,60 @@
     </div>
   </section>
 
-  <section id="how-it-works" class="bg-gray-900 text-white py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+  <section id="how-it-works" class="text-white py-24">
+    <div class="max-w-6xl mx-auto px-6">
 
-      <!-- Section Title -->
-      <h2 class="text-3xl sm:text-4xl font-bold mb-12">How It Works</h2>
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-center mb-16">
+        How It Works
+      </h2>
 
-      <!-- 3 Tiles Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <div class="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-10">
 
-        <!-- Tile 1 -->
-        <div class="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <!-- Icon -->
-          <div class="mb-4">
-            <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+        <!-- Step 1 -->
+        <div class="relative group">
+          <div
+            class="absolute top-0 left-0 w-10 h-10 rounded-full bg-gray-800 text-cyan-400 font-bold flex items-center justify-center z-10">
+            1</div>
+          <div class="ml-14">
+            <h3
+              class="text-2xl font-semibold mb-2 bg-gradient-to-b from-slate-500 via-cyan-400 to-cyan-400 bg-clip-text text-transparent transition">
+              Describe with JSON
+            </h3>
+
+            <p class="text-gray-400">Define your app’s structure, UI, and data with simple JSON. No HTML needed.</p>
           </div>
-          <!-- Title -->
-          <h3 class="text-xl font-semibold mb-2">Describe with JSON</h3>
-          <!-- Description -->
-          <p class="text-gray-400">
-            Define your app's structure, UI, and data in a simple JSON format. No HTML or templates required.
-          </p>
         </div>
 
-        <!-- Tile 2 -->
-        <div class="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <div class="mb-4">
-            <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
+        <!-- Step 2 -->
+        <div class="relative group">
+          <div
+            class="absolute top-0 left-0 w-10 h-10 rounded-full bg-gray-800 text-cyan-400 font-bold flex items-center justify-center z-10">
+            2</div>
+          <div class="ml-14">
+            <h3
+              class="text-2xl font-semibold mb-2 bg-gradient-to-b from-slate-500 via-cyan-400 to-cyan-400 bg-clip-text text-transparent transition">
+              Add Logic in JavaScript</h3>
+            <p class="text-gray-400">Plug in interactive behaviors using plain JavaScript functions.</p>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Add Logic in JavaScript</h3>
-          <p class="text-gray-400">
-            Attach interactivity and behavior using plain JavaScript methods—right alongside your JSON.
-          </p>
         </div>
 
-        <!-- Tile 3 -->
-        <div class="bg-gray-800 hover:bg-gray-700 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <div class="mb-4">
-            <svg class="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        <!-- Step 3 -->
+        <div class="relative group">
+          <div
+            class="absolute top-0 left-0 w-10 h-10 rounded-full bg-gray-800 text-cyan-400 font-bold flex items-center justify-center z-10">
+            3</div>
+          <div class="ml-14">
+            <h3
+              class="text-2xl font-semibold mb-2 bg-gradient-to-b from-slate-500 via-cyan-400 to-cyan-400 bg-clip-text text-transparent transition">
+              Instant & Live</h3>
+            <p class="text-gray-400">Your changes appear in real-time. No build, no refresh. It just works.</p>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Instant & Live</h3>
-          <p class="text-gray-400">
-            See your changes in real time—no build tools, no deployment, always in sync.
-          </p>
         </div>
 
       </div>
     </div>
   </section>
+
 
   <section id="code-examples" class="bg-gray-900 text-white py-20">
     <div class="max-w-4xl mx-auto px-6">
@@ -242,23 +246,17 @@
       <!-- Snippet 1 -->
       <div class="mb-10">
         <h3 class="text-xl font-semibold mb-3">Simple Counter Component</h3>
-        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
-          <button onclick="copyCode('codeBlock1')"
-            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
-            Copy
-          </button>
-          <pre id="codeBlock1" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
-<code>
-  {
-  "type": "div",
-  "children": [
-    { "type": "h2", "text": "{{data.count}} clicks" },
-    { "type": "button", "text": "Increment", "onClick": "increment" }
+        <div class="bg-gray-800 rounded-lg shadow overflow-hidden">
+          <pre class="p-4 overflow-x-auto text-sm font-mono text-gray-100 whitespace-pre">
+<span class="text-blue-400">  {</span>
+<span class="text-blue-400">  "type"</span>: <span class="text-emerald-400">"div"</span>,
+<span class="text-blue-400">  "children"</span>: [
+    { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"h2"</span>, <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"{{data.count}} clicks"</span> },
+    { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"button"</span>, <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"Increment"</span>, <span class="text-blue-400">"onClick"</span>: <span class="text-emerald-400">"increment"</span> }
   ],
-  "data": { "count": 0 },
-  "methods": { "increment": "data.count += 1" }
-}
- </code>
+<span class="text-blue-400">  "data"</span>: { <span class="text-blue-400">"count"</span>: <span class="text-orange-400">0</span> },
+<span class="text-blue-400">  "methods"</span>: { <span class="text-blue-400">"increment"</span>: <span class="text-purple-400">"data.count += 1"</span> }
+<span class="text-blue-400">}</span>
         </pre>
         </div>
       </div>
@@ -266,45 +264,39 @@
       <!-- Snippet 2 -->
       <div class="mb-10">
         <h3 class="text-xl font-semibold mb-3">Todo List (with Loop)</h3>
-        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
-          <button onclick="copyCode('codeBlock2')"
-            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
-            Copy
-          </button>
-          <pre id="codeBlock2" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
-<code>
-  {
-  "type": "div",
-  "children": [
+        <div class="bg-gray-800 rounded-lg shadow overflow-hidden">
+          <pre class="p-4 overflow-x-auto text-sm font-mono text-gray-100 whitespace-pre">
+<span class="text-blue-400">  {</span>
+  <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+  <span class="text-blue-400">"children"</span>: [
     {
-      "type": "div",
-      "style": { "display": "flex", "gap": "8px", "marginBottom": "16px" },
-      "children": [
-        { "type": "input", "placeholder": "Add a task", "bind": "data.newTodo" },
-        { "type": "button", "text": "Add", "onClick": "addTodo" }
+      <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+      <span class="text-blue-400">"style"</span>: { <span class="text-blue-400">"display"</span>: <span class="text-emerald-400">"flex"</span>, <span class="text-blue-400">"gap"</span>: <span class="text-orange-400">"8px"</span>, <span class="text-blue-400">"marginBottom"</span>: <span class="text-orange-400">"16px"</span> },
+      <span class="text-blue-400">"children"</span>: [
+        { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"input"</span>, <span class="text-blue-400">"placeholder"</span>: <span class="text-emerald-400">"Add a task"</span>, <span class="text-blue-400">"bind"</span>: <span class="text-emerald-400">"data.newTodo"</span> },
+        { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"button"</span>, <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"Add"</span>, <span class="text-blue-400">"onClick"</span>: <span class="text-emerald-400">"addTodo"</span> }
       ]
     },
     {
-      "type": "ul",
-      "children": [
+      <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"ul"</span>,
+      <span class="text-blue-400">"children"</span>: [
         {
-          "type": "li",
-          "text": "{{item.text}}",
-          "for": "item, idx in data.todos",
-          "children": [
-            { "type": "button", "text": "Delete", "onClick": "deleteTodo(idx)" }
+          <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"li"</span>,
+          <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"{{item.text}}"</span>,
+          <span class="text-blue-400">"for"</span>: <span class="text-emerald-400">"item, idx in data.todos"</span>,
+          <span class="text-blue-400">"children"</span>: [
+            { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"button"</span>, <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"Delete"</span>, <span class="text-blue-400">"onClick"</span>: <span class="text-emerald-400">"deleteTodo(idx)"</span> }
           ]
         }
       ]
     }
   ],
-  "data": { "todos": [], "newTodo": "" },
-  "methods": {
-    "addTodo": "if (data.newTodo) { data.todos.push({ text: data.newTodo }); data.newTodo = ''; }",
-    "deleteTodo": "data.todos.splice(idx, 1)"
+  <span class="text-blue-400">"data"</span>: { <span class="text-blue-400">"todos"</span>: [], <span class="text-blue-400">"newTodo"</span>: <span class="text-emerald-400">""</span> },
+  <span class="text-blue-400">"methods"</span>: {
+    <span class="text-blue-400">"addTodo"</span>: <span class="text-purple-400">"if (data.newTodo) { data.todos.push({ text: data.newTodo }); data.newTodo = ''; }"</span>,
+    <span class="text-blue-400">"deleteTodo"</span>: <span class="text-purple-400">"data.todos.splice(idx, 1)"</span>
   }
-}
-</code>
+<span class="text-blue-400">}</span>
         </pre>
         </div>
       </div>
@@ -312,48 +304,55 @@
       <!-- Snippet 3 -->
       <div>
         <h3 class="text-xl font-semibold mb-3">Real-time Chat Component</h3>
-        <div class="relative bg-gray-800 rounded-lg shadow overflow-hidden">
-          <button onclick="copyCode('codeBlock3')"
-            class="absolute top-3 right-3 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded">
-            Copy
-          </button>
-          <pre id="codeBlock3" class="p-4 overflow-x-auto text-sm font-mono text-gray-100">
-<code>
-  {
-  "type": "div",
-  "children": [
+        <div class="bg-gray-800 rounded-lg shadow overflow-hidden">
+          <pre class="p-4 overflow-x-auto text-sm font-mono text-gray-100 whitespace-pre">
+<span class="text-blue-400">  {</span>
+  <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+  <span class="text-blue-400">"children"</span>: [
     {
-      "type": "div",
-      "style": { "height": "300px", "overflowY": "auto", "border": "1px solid #ddd", "padding": "16px" },
-      "children": [
+      <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+      <span class="text-blue-400">"style"</span>: {
+        <span class="text-blue-400">"height"</span>: <span class="text-emerald-400">"300px"</span>,
+        <span class="text-blue-400">"overflowY"</span>: <span class="text-emerald-400">"auto"</span>,
+        <span class="text-blue-400">"border"</span>: <span class="text-emerald-400">"1px solid #ddd"</span>,
+        <span class="text-blue-400">"padding"</span>: <span class="text-emerald-400">"16px"</span>
+      },
+      <span class="text-blue-400">"children"</span>: [
         {
-          "type": "div",
-          "text": "{{msg.user}}: {{msg.text}}",
-          "for": "msg in data.messages"
+          <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+          <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"{{msg.user}}: {{msg.text}}"</span>,
+          <span class="text-blue-400">"for"</span>: <span class="text-emerald-400">"msg in data.messages"</span>
         }
       ]
     },
     {
-      "type": "div",
-      "style": { "display": "flex", "gap": "8px", "marginTop": "8px" },
-      "children": [
-        { "type": "input", "placeholder": "Type a message...", "bind": "data.newMessage" },
-        { "type": "button", "text": "Send", "onClick": "sendMessage" }
+      <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"div"</span>,
+      <span class="text-blue-400">"style"</span>: {
+        <span class="text-blue-400">"display"</span>: <span class="text-emerald-400">"flex"</span>,
+        <span class="text-blue-400">"gap"</span>: <span class="text-emerald-400">"8px"</span>,
+        <span class="text-blue-400">"marginTop"</span>: <span class="text-emerald-400">"8px"</span>
+      },
+      <span class="text-blue-400">"children"</span>: [
+        { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"input"</span>, <span class="text-blue-400">"placeholder"</span>: <span class="text-emerald-400">"Type a message..."</span>, <span class="text-blue-400">"bind"</span>: <span class="text-emerald-400">"data.newMessage"</span> },
+        { <span class="text-blue-400">"type"</span>: <span class="text-emerald-400">"button"</span>, <span class="text-blue-400">"text"</span>: <span class="text-emerald-400">"Send"</span>, <span class="text-blue-400">"onClick"</span>: <span class="text-emerald-400">"sendMessage"</span> }
       ]
     }
   ],
-  "data": { "messages": [], "newMessage": "" },
-  "methods": {
-    "sendMessage": "if (data.newMessage) { data.messages.push({ user: 'You', text: data.newMessage }); data.newMessage = ''; }"
+  <span class="text-blue-400">"data"</span>: {
+    <span class="text-blue-400">"messages"</span>: [],
+    <span class="text-blue-400">"newMessage"</span>: <span class="text-emerald-400">""</span>
+  },
+  <span class="text-blue-400">"methods"</span>: {
+    <span class="text-blue-400">"sendMessage"</span>: <span class="text-purple-400">"if (data.newMessage) { data.messages.push({ user: 'You', text: data.newMessage }); data.newMessage = ''; }"</span>
   }
-}
-</code>
+<span class="text-blue-400">}</span>
         </pre>
         </div>
       </div>
 
     </div>
   </section>
+
 
 
   <section id="why-choose" class="bg-gray-900 py-16 px-6 text-white">
@@ -432,7 +431,7 @@
         .catch(err => alert("Failed to copy: " + err));
     }
   </script>
- 
+
 
 </body>
 
