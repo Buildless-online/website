@@ -411,19 +411,46 @@
     </div>
   </section>
 
-  <footer class="bg-gray-800 text-white py-12 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-4">Trusted by developers at leading companies</h3>
+<footer class="bg-gray-800 text-gray-300 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    
+    <!-- Logo / Brand -->
+    <div>
+      <img src="./images/Logo.png" alt="Logo" class="h-12 w-auto mb-4">
+      <p class="text-sm leading-relaxed max-w-md">
+        Buildless helps you build modern apps faster with zero setup and 100% flexibility.
+      </p>
+    </div>
 
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-300 text-lg mt-4">
-        <span class="hover:text-blue-400 transition">Company A</span>
-        <span class="hover:text-blue-400 transition">Startup B</span>
-        <span class="hover:text-blue-400 transition">Enterprise C</span>
+    <!-- Product + CTA -->
+    <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+      <!-- Product Links -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Product</h4>
+        <ul class="space-y-2">
+          <li><a href="#everything" class="hover:text-white transition">Features</a></li>
+          <li><a href="#code-examples" class="hover:text-white transition">Examples</a></li>
+          <li><a href="#why-choose" class="hover:text-white transition">Why Choose</a></li>
+        </ul>
       </div>
 
-      <p class="text-sm text-gray-500 mt-8">&copy; 2025 JSON App Builder. All rights reserved.</p>
+      <!-- CTA -->
+      <div class="mt-6 md:mt-0 md:ml-8">
+        <a href="https://app.buildless.online/login" 
+           class="ml-4 bg-gray-100 text-gray-800 font-semibold px-4 py-2 rounded hover:bg-gray-900 hover:text-gray-100 transition">
+          Get Started
+        </a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- Bottom -->
+  <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+    &copy; 2025 Buildless. All rights reserved.
+  </div>
+</footer>
+
+
 
 
 
